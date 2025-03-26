@@ -1,0 +1,248 @@
+body {
+    font-family: Arial, Helvetica, sans-serif sans-serif, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+    color: #333;
+  }
+  
+  /* Header & Navigation */
+  header {
+    background: rgba(0, 0, 0, 0.925);
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+  }
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  nav ul li {
+    margin: 0 1em;
+  }
+  nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  nav ul li a:hover {
+    color: #ff9800;
+  }
+  
+  /* Main Content */
+  main {
+    padding: 2em;
+  }
+  
+  /* Footer */
+  footer {
+    background: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  /* Gallery Styles */
+  .gallery {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+  }
+  .gallery img {
+    width: 100%;
+    max-width: 300px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    transition: transform 0.3s;
+  }
+  .gallery img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Form Styles */
+  form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  input, textarea, button {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  button {
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  button:hover {
+    background: #ff9800;
+  }
+  .countdown-container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-top: 50px;
+}
+
+.countdown-container h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.time-box {
+    background: #ff9800; /* Orange */
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 20px;
+    min-width: 80px;
+}
+
+.time-box span {
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.time-box small {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+/* Make it responsive */
+@media (max-width: 600px) {
+    .countdown {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .time-box {
+        min-width: 70px;
+        padding: 10px;
+    }
+}
+/* Review Section */
+.reviews {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.review-btn {
+  background: #ff9800;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  margin: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.review-btn:hover {
+  background: #e67e22;
+}
+
+.review-cycle {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(51, 51, 51, 0.9); /* Dark semi-transparent background */
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 18px;
+  font-style: italic;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Smooth Fade Animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.video-container {
+  width: 100%;
+  max-height: 600px;
+  overflow: hidden;
+}
+
+video {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+.menu-container {
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+h2, h3 {
+  color: #333;
+}
+
+.menu-item {
+  background: #fff3cd;
+  padding: 15px;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+input[type="number"] {
+  width: 50px;
+  padding: 5px;
+  margin-left: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+button {
+  background: #ff9800;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #e67e22;
+}
+
+#order-summary {
+  list-style-type: none;
+  padding: 0;
+}

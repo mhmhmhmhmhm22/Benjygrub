@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Office Catering</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head> 
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="menu.html">Our Menu</a></li>
+        <li><a href="ordernow.html">Start an Order</a></li>
+        <li><a href="officedelivery.html">Office Catering</a></li>
+        <li><a href="allergens.html">Allergens & Nutrition</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="legal.html">Legal</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <header>
+    <h1>Office Deliveries</h1>
+    <p>Order large quantities of our gourmet sandwiches for your office.</p>
+  </header>
+
+  <form id="office-order-form">
+    <label for="company-name">Company Name:</label>
+    <input type="text" id="company-name" name="company-name" required>
+    
+    <label for="contact-name">Contact Name:</label>
+    <input type="text" id="contact-name" name="contact-name" required>
+    
+    <label for="contact-email">Contact Email:</label>
+    <input type="email" id="contact-email" name="contact-email" required>
+    
+    <label for="delivery-date">Delivery Date:</label>
+    <input type="date" id="delivery-date" name="delivery-date" required>
+    
+    <label for="delivery-time">Preferred Delivery Time:</label>
+    <input type="time" id="delivery-time" name="delivery-time" required>
+    
+    <h2>Select Sandwiches</h2>
+    <div class="sandwich-options">
+      <div class="sandwich-item">
+        <label>Italian Truffle Panino (£7.99 each):</label>
+        <input type="number" min="0" value="0" name="italian-panini">
+    </div>
+    <div class="sandwich-item">
+        <label>Tokyo Katsu Sando (£9 each):</label>
+        <input type="number" min="0" value="0" name="tokyo-katsu">
+    </div>
+    <div class="sandwich-item">
+        <label>Torta Ahogada (£9.50 each):</label>
+        <input type="number" min="0" value="0" name="cuban-medianoche">
+    </div>
+    <div class="sandwich-item">
+        <label>French Croque Monsieur (£11 each):</label>
+        <input type="number" min="0" value="0" name="croque-monsieur">
+    </div>
+  </div>
+    
+    <label for="special-requests">Special Requests:</label>
+    <textarea id="special-requests" name="special-requests" rows="4" placeholder="Let us know if you have any dietary preferences..."></textarea>
+    
+    <button type="submit">Submit Order</button>
+  </form>
+
+  <script>
+    document.getElementById("office-order-form").addEventListener("submit", function(event) {
+      event.preventDefault();
+      alert("✅ Your office delivery order has been submitted! We will contact you soon.");
+      this.reset();
+    });
+  </script>
+
+  <footer>
+    <p>&copy;2025 BenjyGrub</p>
+  </footer>
+</body>
+</html>
